@@ -24,10 +24,10 @@ public class UITest
 			WebDriverManager.chromedriver().setup();
 			 driver=new ChromeDriver();
 		}
-		else if(browserName.contains("Firefox"))
+		else if(browserName.contains("Chrome"))
 		{
-			WebDriverManager.Firefoxdriver().setup();
-			 driver=new FirefoxDriver();
+			WebDriverManager.Chromedriver().setup();
+			 driver=new ChromeDriver();
 		}
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
